@@ -6,7 +6,8 @@ import org.springframework.stereotype.Service
 @Service
 class StudentService : IStudentService {
 
+
     override fun test(): String {
-        TODO("implement some thing")
+        return "Hello World";
     }
 }
