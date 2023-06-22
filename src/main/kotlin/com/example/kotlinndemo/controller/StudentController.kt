@@ -1,17 +1,26 @@
 package com.example.kotlinndemo.controller
 
 import com.example.kotlinndemo.config.AppConfig
-import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
+@RequestMapping("student")
 class StudentController(private val appConfig: AppConfig) {
 
-    @GetMapping("hello")
+    @GetMapping("ping")
     fun test(): String {
-        return appConfig.name.toString();
+        return "pong";
     }
+
+    @GetMapping("")
+    fun getStudents(): ResponseEntity<*>{
+        return ResponseEntity.ok("abcdefg")
+    }
+
+
 
 
 
