@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor
 @AllArgsConstructor
 data class Student(
         @Id
-        var id: Long,
-        var name: String,
-        var age: Int
-){
+        var id: String,
+        var name: String?,
+        var age: Int?
+) {
 }

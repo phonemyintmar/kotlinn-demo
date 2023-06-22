@@ -13,7 +13,7 @@ class ArrayTest {
         loopTest();
     }
 
-    fun test() {
+     fun test() {
         val students = arrayOf("hla hla", "mya mya");
         if ("ag ag" in students) {
             log.info("Array htl mhr ag ag shi")
@@ -27,7 +27,7 @@ class ArrayTest {
         }
     }
 
-    fun loopTest() {
+     fun loopTest() {
         var cars = arrayOf("ferrari", "lambo", "gtr");
         for (x in cars) {
             println(x)
@@ -44,9 +44,6 @@ class ArrayTest {
         cars.forEachIndexed { i, x ->
             log.info("From for each indexed, Cars Array htl mhr index $i ka $x")
         }
-
-        var arrayTest = ArrayTest();
-        
     }
 
 
